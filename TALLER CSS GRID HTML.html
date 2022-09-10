@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: green;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .menu {
+            grid-area: menu;
+        }
+
+        .main {
+            grid-area: main;
+
+        }
+
+        .right {
+            grid-area: right;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 100px 200px 300px;
+            grid-template-rows: auto;
+            grid-template-areas:
+                'header header header header header header'
+                'menu menu main main main .'
+                'footer footer footer footer footer .';
+            background-color: gray;
+            gap: 5px;
+
+        }
+
+        .grid-container div {
+            border: 1px solid;
+            text-align: center;
+            background-color: rgb(210, 255, 121);
+        }
+
+        .logo {
+            width: 90x;
+            height: 70px;
+            border-radius: 50%;
+            float: left;
+
+        }
+
+        .avatar {
+            width: 90x;
+            height: 70px;
+            border-radius: 50%;
+            float: right;
+            margin-bottom: 10px;
+
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav #item {
+            text-align: center;
+        }
+
+        #nav #item a {
+            background-color: rgb(1, 221, 1);
+            color: black;
+            padding: 10px 20px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+
+        }
+
+        #nav #desple {
+            display: none;
+        }
+
+        #nav #item a:hover {
+            background-color: greenyellow;
+        }
+
+        #nav #item:hover #desple {
+            display: block;
+        }
+
+        #nav #desple1 {
+            display: none;
+        }
+
+        #nav #item a:hover {
+            background-color: greenyellow;
+        }
+
+        #nav #item:hover #desple1 {
+            display: block;
+        }
+
+        .grid-container1 {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(4, auto);
+            padding: 20px;
+        }
+
+        .grid-container1>div {
+            background-color: greenyellow;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+
+        }
+
+        .item1 {
+            grid-column: 1/ span 3;
+        }
+
+        div.item1 {
+            background-color: rgb(113, 255, 113);
+
+        }
+
+        div.item2 {
+            background-color:rgb(113, 255, 113);
+        }
+
+        div.item3 {
+            background-color: rgb(113, 255, 113);
+        }
+
+        div.item4 {
+            background-color: rgb(113, 255, 113);
+        }
+
+        div.item5 {
+            background-color: rgb(113, 255, 113);
+        }
+
+        div.item6 {
+            background-color: rgb(113, 255, 113);
+        }
+        div.item7 {
+            background-color: rgb(96, 175, 96);
+        }
+
+        div.item8 {
+            background-color: rgb(96, 175, 96);
+        }
+
+        div.item9 {
+            background-color: rgb(96, 175, 96);
+        }
+
+        div.item10 {
+            background-color: rgb(96, 175, 96);
+        }
+        .item10 {
+            grid-column: 4;
+            grid-row: 3/ span 5;
+
+        }
+        div.item11 {
+            background-color: rgb(43, 255, 43);
+        }
+
+        div.item12 {
+            background-color: rgb(43, 255, 43);
+        }
+
+        div.item13 {
+            background-color: rgb(43, 255, 43);
+        }
+
+
+        .item14 {
+            grid-column: 1 / span 2;
+        }
+
+        div.item14 {
+            background-color: rgb(119, 211, 119);
+        }
+
+        div.item15 {
+            background-color:  rgb(119, 211, 119);
+        }
+
+        .g img {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+        }
+
+        .grid-container2 {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="header">
+            <img class="logo"
+                src="https://cdn.shopify.com/app-store/listing_images/6c1ed14075789eb624282d99c38df88c/promotional_image/CNeUqMaSlPgCEAE=.png">
+            <img class="avatar" src="https://i.pinimg.com/736x/57/5c/11/575c1148eeaa9938248ae1e42808e852.jpg">
+        </div>
+        <div class="menu">
+            <div id="nav">
+                <ul>
+                    <li id="item"><a href="#">Rastrear</a>
+                        <ul id="desple1">
+                            <li><a href="#">Rastrear y consultar</a></li>
+                            <li><a href="#">Factura Electrónica</a></li>
+                            <li><a href="#">Rastrear múltiples guias</a></li>
+                            <li><a href="#">Destinos y trayectos</a></li>
+                        </ul>
+                    </li>
+                    <li id="item"><a href="#">Cotizar</a>
+                        <ul id="desple">
+                            <li><a href="#">Cotizar mis envios</a></li>
+                            <li><a href="#">Ver tarifas y precios</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li id="item"><a href="#">Recoger</a></li>
+                    <li id="item"><a href="#">Contáctenos</a></li>
+
+
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="grid-container1">
+                <div class="grid-item item1">1</div>
+                <div class="grid-item item2">2</div>
+                <div class="grid-item item3">3</div>
+                <div class="grid-item item4">4</div>
+                <div class="grid-item item5">5</div>
+                <div class="grid-item item6">6</div>
+                <div class="grid-item item7">7</div>
+                <div class="grid-item item8">8</div>
+                <div class="grid-item item9">9</div>
+                <div class="grid-item item10">10</div>
+                <div class="grid-item item11">11</div>
+                <div class="grid-item item12">12</div>
+                <div class="grid-item item13">13</div>
+                <div class="grid-item item14">14</div>
+                <div class="grid-item item15">15</div>
+            </div>
+        </div>
+        <div class="right">Right</div>
+        <div class="footer">
+            <div class="grid-container2">
+                <div class="g1 g">
+                    <img src="https://indiehoy.com/wp-content/uploads/2021/03/homero-simpson.jpg">
+                </div>
+                <div class="g2 g">
+                    <img
+                        src="https://i.discogs.com/cQr7aDIN9DWT15KiDOXURBNo65Xrajt3HaOrLhcaOw0/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9BLTEwMTA4/MjMtMTMzNTcyODAx/Ni5wbmc.jpeg">
+
+                </div>
+                <div class="g3 g">
+                    <img src="https://pm1.narvii.com/6716/65d9d7bcc60277b51b13a03737be48f98caa1344_hq.jpg">
+
+                </div>
+                <div class="g4 g">
+                    <img src="http://pm1.narvii.com/6856/17edede6e5eb819a5d3ab155c1ca17c358f5afcav2_00.jpg">
+
+                </div>
+                <div class="g5 g">
+                    <img src="https://i.pinimg.com/originals/77/d4/43/77d44343ea881973a6c169fa83ec8729.jpg">
+
+                </div>
+                <div class="g6 g">
+                    <img src="https://i.pinimg.com/474x/4e/82/19/4e8219d09ad552a88666e111a95ef9cb.jpg">
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+</html>

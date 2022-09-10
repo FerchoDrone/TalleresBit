@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            text-decoration: none;
+            font-family: poppins;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        section.section-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+        }
+
+        section.section-1:hover {
+            cursor: pointer;
+        }
+
+        div.block-1 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .principal-container0 {
+            padding: 10px 0px 20px;
+            text-align: right;
+            font-family: 'Lato', sans-serif;
+            margin-top: 20px;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav #item {
+            float: left;
+        }
+
+        #nav #item a {
+            background-color: white;
+            color: rgba(21, 21, 153, 0.829);
+            padding: 10px 20px;
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-decoration: none;
+
+
+        }
+
+        #nav #desple {
+            display: none;
+        }
+
+        #nav #item a:hover {
+            background-color: white;
+        }
+
+        #nav #item:hover #desple {
+            display: block;
+        }
+
+        #nav #desple1 {
+            display: none;
+        }
+
+        #nav #item a:hover {
+            background-color: white;
+        }
+
+        #nav #item:hover #desple1 {
+            display: block;
+        }
+
+        #nav #desple2 {
+            display: none;
+        }
+
+        #nav #item a:hover {
+            background-color: white;
+        }
+
+        #nav #item:hover #desple2 {
+            display: block;
+        }
+
+        .gallery {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 930px;
+            height: 332px;
+        }
+
+        .gallery1 {
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 10px;
+        }
+
+        .gallery1 img {
+            width: 930px;
+            height: 112px;
+        }
+
+
+        .gallery2 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 10px;
+        }
+
+        .gallery2 img {
+            width: 930px;
+            height: 97px;
+        }
+
+        .gallery2 img:hover {
+            cursor: pointer;
+        }
+
+        .principal-container1 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 25px;
+        }
+
+        .frase1 {
+            color: blue;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .pago {
+            width: 289.98px;
+            height: 149.72px;
+            margin: 0 10px;
+        }
+
+        .pago:hover {
+            cursor: pointer;
+        }
+
+        .frase2 {
+            color: black;
+            font-size: 15px;
+            text-align: center;
+        }
+
+        .principal-container1 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 20px;
+        }
+
+        .gallery3 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 20px;
+        }
+
+        .gallery3 img {
+            width: 930px;
+            height: 79.05px;
+        }
+
+        .principal-container2 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 5px;
+        }
+
+        .perros {
+            width: 289.98px;
+            height: 259.33px;
+            margin: 0 10px;
+        }
+
+        .perros:hover {
+            cursor: pointer;
+        }
+
+        .gallery4 {
+            background-color: white;
+            text-align: center;
+            font-family: 'Lato', sans-serif;
+            margin-top: 10px;
+        }
+
+        .gallery4 img {
+            width: 930px;
+            height: 86.02px;
+        }
+
+        .principal-container3 {
+            padding: 0px 15px;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            font-size: 30px;
+
+        }
+
+        select {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+
+        }
+
+        input[type=text] {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+        }
+
+        div.principal-container4{
+            background-color: white;
+            text-align: center;
+            margin-top: 20px; 
+            
+
+      
+            
+        }
+
+        div.principal-container4 img{
+           width: 200px;
+           border-radius: 100%;
+           height: 200px; 
+           margin: 10px 100px;
+           display: inline-block;
+           position: relative;
+           
+          
+        }
+
+        div.principal-container4:hover{
+            cursor: pointer;
+        }
+        div.letra{
+            text-align: center;
+            padding:10px;
+            font-size: 40px;
+        }
+       
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    
+    
+}
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <section class="section-1">
+            <img class="Logo" src="https://www.fundacionanimalove.org/images/logo1.png">
+
+
+            <div id="nav">
+                <ul>
+                    <li id="item"><a href="#">Inicio</a></li>
+
+                    <li id="item"><a href="#">Fundación</a>
+                        <ul id="desple">
+                            <li><a href="#">¿Qué Hacemos?</a></li>
+                            <li><a href="#">Cómo lo hacemos</a></li>
+
+                        </ul>
+
+                    </li>
+                    <li id="item"><a href="#">Adopciones</a>
+                        <ul id="desple1">
+                            <li><a href="#">Programa de adopción</a></li>
+                        </ul>
+                    </li>
+                    <li id="item"><a href="#">Plan padrinos</a>
+                        <ul id="desple2">
+                            <li><a href="#">Planes de apadrinamiento</a></li>
+                        </ul>
+                    </li>
+                    <li id="item"><a href="#">Noticias</a></li>
+                    <li id="item"><a href="#">Eventos</a></li>
+                    <li id="item"><a href="#">Galería</a></li>
+                    <li id="item"><a href="#">Contáctanos</a></li>
+
+                </ul>
+            </div>
+
+            <div class="block-1">
+
+                <div class="principal-container0">
+                    <img class="network" src="https://www.fundacionanimalove.org/images/2021/09/06/instgram.jpg">
+                    <img class="network" src="https://www.fundacionanimalove.org/images/2021/09/06/facebook.jpg">
+                    <img class="network" src="https://www.fundacionanimalove.org/images/2021/09/06/twitter.jpg">
+                    <img class="network" src="https://www.fundacionanimalove.org/images/2021/09/06/whatsapp.jpg">
+                </div>
+            </div>
+
+        </section>
+    </header>
+    <div class="gallery">
+        <img src="https://www.fundacionanimalove.org/images/2022/04/11/banner-animalove-copy.jpg">
+    </div>
+
+    <div class="gallery1">
+        <img src="https://www.fundacionanimalove.org/images/2021/09/06/causa.jpg">
+    </div>
+    <div class="gallery2">
+        <img src="https://www.fundacionanimalove.org/images/2021/09/06/botondonacion.jpg">
+    </div>
+    <div class="principal-container1">
+        <h1 class="frase1">TAMBIÉN PUEDES HACER TU APORTE POR ESTOS MEDIOS</h1>
+        <img class="pago" src="https://www.fundacionanimalove.org/images/2021/09/07/botton-nequi.png">
+        <img class="pago" src="https://www.fundacionanimalove.org/images/2021/09/07/botton-daviplata.png">
+        <img class="pago" src="https://www.fundacionanimalove.org/images/2021/09/06/paypal.jpg">
+        <h1 class="frase2">Mejoramos la vida de los animales que están en situación de maltrato y/o abandono. Aliviar su
+            sufrimiento y darles un lugar importante en nuestra sociedad.</h1>
+    </div>
+    <div class="gallery3">
+        <img src="https://www.fundacionanimalove.org/images/2021/09/06/enanimal.jpg">
+    </div>
+    <div class="principal-container2">
+        <img class="perros" src="https://www.fundacionanimalove.org/images/2022/03/09/2adoptame.jpeg">
+        <img class="perros" src="https://www.fundacionanimalove.org/images/2022/03/09/1apadriname.jpg">
+        <img class="perros" src="https://www.fundacionanimalove.org/images/2022/03/09/3hacerunaporte.jpeg">
+    </div>
+
+    <div class="gallery4">
+        <img src="https://www.fundacionanimalove.org/images/2021/09/06/busca.jpg">
+    </div>
+
+    <div class="principal-container3">
+        <p class="select">
+            <label for="cars">Estoy interesado en adoptar</label>
+            <select id="cars">
+                <option value="Gato Hembra">Gato Hembra</option>
+                <option value="Gato Macho">Gato Macho</option>
+                <option value="Perro Hembra">Perro Hembra</option>
+                <option value="Perro Macho">Perro Macho</option>
+            </select>
+        </p> 
+        <form>
+            <label for="fname">Buscar por el nombre de la mascota</label>
+            <input type="text" id="fname" name="fname">
+        </form>
+    </div>
+
+    <div class="grid">
+
+        <div class="principal-container4">
+
+            <div class="foto">
+                <img src="https://www.fundacionanimalove.org/images/productos/1_1651769715.jpg">
+            </div>
+            <div class="letra">
+                <p>Africa</p>
+                <p>8 años - Perro hembra - Criolla</p>
+            </div>
+    
+        </div>
+    
+        <div class="principal-container4">
+    
+            <div class="foto">
+                <img src="https://www.fundacionanimalove.org/images/productos/1_1651690917.jpg">
+            </div>
+            <div class="letra">
+                <p>Nano</p>
+                <p>7 años - Perro macho - Criollo</p>
+            </div>
+    
+        </div>
+    
+        <div class="principal-container4">
+    
+            <div class="foto">
+                <img src="https://www.fundacionanimalove.org/images/productos/1_1651693283.jpg">
+            </div>
+            <div class="letra">
+                <p>Ginebra</p>
+                <p>6 años - Perro hembra - Criolla</p>
+            </div>
+    
+        </div>
+        
+        <div class="principal-container4">
+    
+            <div class="foto">
+                <img src="https://www.fundacionanimalove.org/images/productos/1_1651771419.jpg">
+            </div>
+            <div class="letra">
+                <p>Timon</p>
+                <p>7 años - Perro macho - Criollo</p>
+            </div>
+    
+        </div>
+
+    </div>
+    
+
+
+</body>
+
+</html>
