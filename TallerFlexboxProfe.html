@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-principal {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: solid;
+            border-width: 5px;
+            border-color: coral;
+            width: auto;
+            height: auto;
+            
+        }
+
+        .Bloque1 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            padding: 25px;
+        }
+
+        .Bloque2 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: outset;
+            border-width: 10px;
+            border-color: greenyellow;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        .Bloque3 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: outset;
+            border-width: 10px;
+            border-color: blue;
+            height: auto;
+        }
+
+        .Bloque3 div {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(200, 255, 35);
+            width: 150px;
+            margin: 10px;
+            font-size: 30px;
+            padding: 15px;
+            flex-basis: 110px;
+            justify-content: space-evenly;
+        }
+
+        .Bloque4 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            padding: 25px;
+        }
+
+        .Bloque5 {
+
+            display: flex;
+            flex-wrap: wrap;
+            border-style: outset;
+            border-width: 10px;
+            border-color: greenyellow;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        .Bloque6 {
+
+            display: flex;
+            flex-wrap: wrap;
+            border-style: outset;
+            border-width: 10px;
+            border-color: blue;
+            height: auto;
+            flex-direction: row;
+
+
+
+        }
+
+        .Bloque6 div {
+
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(200, 255, 35);
+            width: 150px;
+            margin: 10px;
+            font-size: 30px;
+            padding: 15px;
+            flex-basis: 110px;
+            flex-direction: row-reverse;
+            justify-content: space-evenly;
+        }
+
+        .Bloque7 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            padding: 25px;
+        }
+
+        .Bloque8 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: double;
+            border-color: black;
+            border-width: 10px;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        .Bloque9 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: double;
+            border-color: black;
+            border-width: 10px;
+            height: auto;
+            flex-direction: column;
+        }
+
+        .Bloque9 div {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(200, 255, 35);
+            width: 430px;
+            margin: 10px 20px;
+            font-size: 30px;
+            padding: 4px;
+            justify-content: space-evenly;
+        }
+
+        .Bloque10 {
+            display: flex;
+            flex-wrap: wrap;
+            width: auto;
+            padding: 25px;
+        }
+
+        .Bloque11 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: double;
+            border-color: black;
+            border-width: 10px;
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+
+        .Bloque12 {
+            display: flex;
+            flex-wrap: wrap;
+            border-style: double;
+            border-color: black;
+            border-width: 10px;
+            height: auto;
+            flex-direction: column-reverse;
+        }
+
+        .Bloque12 div {
+            display: flex;
+            flex-wrap: wrap;
+            background-color: rgb(200, 255, 35);
+            width: 430px;
+            margin: 10px 20px;
+            font-size: 30px;
+            padding: 10px;
+            /* flex-direction: column-reverse; */
+            justify-content: space-evenly;
+        }
+        @media screen and (max-width: 1000px) {
+            .container-principal {
+                background: rgb(104, 208, 128) !important;
+                background: linear-gradient(90deg, rgb(2, 247, 194) 0%, rgb(66, 229, 71) 35%, rgb(101, 247, 96) 100%) !important;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-principal">
+        <div class="Bloque1">
+            <div class="Bloque2">
+                <div class="Bloque3">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="Bloque4">
+            <div class="Bloque5">
+                <div class="Bloque6">
+
+                    <div style="order:3;">1</div>
+                    <div style="order:6;">2</div>
+                    <div style="order:1;">3</div>
+                    <div style="order:4;">4</div>
+                    <div style="order:6;">5</div>
+                    <div style="order:2;">6</div>
+                </div>
+            </div>
+        </div>
+        <div class="Bloque7">
+            <div class="Bloque8">
+                <div class="Bloque9">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                </div>
+            </div>
+        </div>
+        <div class="Bloque10">
+            <div class="Bloque11">
+                <div class="Bloque12">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
